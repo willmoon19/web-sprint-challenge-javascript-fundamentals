@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+  /* For one when a function is nested in another function it becomes a child in a child/parent relation. This gives nestedFunction access to basically anything within its parent function, However, the parent (myFunction) does not have access to its childrens variables. This has to do with the scope. the parents variable is within its local scope. Things in the global scope cannot access it, but, a nested function that is within the parents local scope can. Which also has to do with lexical scope */
 
 
 
@@ -28,9 +28,12 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  let sum = 0;
+  for (let i = 0; i <= number; i++){
+     sum += i;
+  }
+  return sum;
   }
  
 
